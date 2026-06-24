@@ -6,6 +6,13 @@ CREATE TABLE dim_fund (
     sub_category TEXT
 );
 
+CREATE TABLE dim_date (
+    date_id DATE PRIMARY KEY,
+    year INTEGER,
+    month INTEGER,
+    quarter INTEGER
+);
+
 CREATE TABLE fact_nav (
     amfi_code TEXT,
     nav_date DATE,
@@ -27,8 +34,8 @@ CREATE TABLE fact_performance (
     sharpe_ratio REAL
 );
 
-CREATE TABLE dim_benchmark (
+CREATE TABLE fact_aum (
+    fund_house TEXT,
     date DATE,
-    index_name TEXT,
-    close_value REAL
+    aum_crore REAL
 );
