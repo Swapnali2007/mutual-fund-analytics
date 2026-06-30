@@ -1,91 +1,132 @@
-# Mutual Fund Analytics Capstone Project
+# Mutual Fund Analytics
 
-## Day 1 - Project Setup & Data Ingestion
+## Project Overview
 
-### Completed Tasks
-- Created project folder structure
-- Installed required dependencies
-- Loaded all 10 datasets using Pandas
-- Performed initial data quality checks
-- Fetched live NAV data using mfapi.in API
-- Retrieved NAV data for 5 key mutual fund schemes
-- Analyzed fund master dataset
-- Validated AMFI codes against NAV history
+This project analyzes the Indian Mutual Fund industry using historical fund data, investor transactions, SIP inflows, portfolio holdings, and benchmark indices. The project includes data cleaning, exploratory data analysis (EDA), performance analytics, and an interactive Power BI dashboard.
 
-### Data Quality Summary
-- Successfully loaded all 10 datasets
-- Total Mutual Fund Schemes: 40
-- NAV History Records: 46,000
-- Investor Transactions Records: 32,778
-- All AMFI codes validated successfully
-- No missing AMFI references found
+---
 
-### Deliverables
-- data_ingestion.py
-- live_nav_fetch.py
-- amfi_validation.py
-- requirements.txt
-- 01_data_ingestion.ipynb
+## Objectives
 
-# Mutual Fund Analytics Capstone Project
+- Analyze mutual fund industry trends.
+- Study SIP inflows and investor behavior.
+- Evaluate fund performance using financial metrics.
+- Compare mutual funds against benchmark indices.
+- Build an interactive dashboard for business insights.
 
-## Overview
+---
 
-This project focuses on Mutual Fund Analytics using Python, Pandas, SQL, and SQLite. The objective is to perform data ingestion, cleaning, validation, database design, and analytical reporting on mutual fund datasets.
+## Technologies Used
 
-## Tools & Technologies
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Plotly
+- SciPy
+- Jupyter Notebook
+- Power BI
 
-* Python
-* Pandas
-* NumPy
-* SQLAlchemy
-* SQLite
-* Jupyter Notebook
-* Matplotlib
-* Seaborn
-* Plotly
+---
 
 ## Project Structure
 
-* data/raw/ - Original datasets
-* data/processed/ - Cleaned datasets
-* notebooks/ - Analysis notebooks
-* sql/ - Database schema and SQL queries
-* dashboard/ - Dashboard files
-* reports/ - Project reports
+```
+Mutual_Fund_Analytics/
+│
+├── data/
+│   ├── raw/
+│   └── processed/
+│
+├── notebooks/
+│   ├── EDA.ipynb
+│   └── Performance_Analytics.ipynb
+│
+├── reports/
+│   ├── charts/
+│   ├── alpha_beta.csv
+│   ├── fund_scorecard.csv
+│   ├── tracking_error.csv
+│   └── ...
+│
+├── dashboard/
+│  └── bluestock_mf_dashboard.pbix
+│
+└── README.md
+```
 
+---
 
-## Day 2: Data Cleaning & SQLite Database Design
+## Datasets
 
-### Completed Tasks
+- Fund Master
+- NAV History
+- AUM by Fund House
+- Monthly SIP Inflows
+- Category Inflows
+- Industry Folio Count
+- Performance Metrics
+- Transactions
+- Portfolio Holdings
+- Benchmark Indices
 
-* Cleaned NAV history dataset
-* Cleaned investor transactions dataset
-* Cleaned scheme performance dataset
-* Designed SQLite database schema
-* Loaded cleaned datasets into SQLite database
-* Created analytical SQL queries
-* Prepared data dictionary
+---
 
-### Deliverables
+## Exploratory Data Analysis
 
-* clean_nav_history.py
-* clean_transactions.py
-* clean_performance.py
-* load_to_sqlite.py
-* schema.sql
-* queries.sql
-* data_dictionary.md
-* bluestock_mf.db
+The EDA notebook includes:
 
-## Database Tables
+- Industry AUM trend
+- SIP inflow trend
+- Category inflows
+- State-wise transactions
+- Folio growth
+- NAV movement
+- Portfolio sector allocation
+- Correlation analysis
 
-* dim_fund
-* fact_nav
-* fact_transactions
-* fact_performance
-* dim_benchmark
+---
+
+## Performance Analytics
+
+Performance metrics calculated include:
+
+- Daily Returns
+- CAGR (1Y, 3Y, 5Y)
+- Sharpe Ratio
+- Sortino Ratio
+- Alpha
+- Beta
+- Maximum Drawdown
+- Fund Scorecard
+- Tracking Error
+
+---
+
+## Dashboard
+
+The Power BI dashboard contains:
+
+- Industry Overview
+- Fund Performance
+- Investor Analytics
+- SIP & Market Trends
+
+---
+
+## Key Deliverables
+
+- EDA.ipynb
+- Performance_Analytics.ipynb
+- Power BI Dashboard (.pbix)
+- Dashboard PDF
+- PNG Charts
+- CSV Reports
+
+---
 
 ## Author
 
+Capstone Project – Mutual Fund Analytics
 Swapnali Kamble
