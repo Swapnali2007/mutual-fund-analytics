@@ -52,7 +52,11 @@ Mutual_Fund_Analytics/
 │
 ├── dashboard/
 │  └── bluestock_mf_dashboard.pbix
-│
+│  ├── Page1.png
+│  ├── Page2.png
+│  ├── Page3.png
+│  ├── Page4.png
+│  └── 
 └── README.md
 ```
 
